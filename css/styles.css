@@ -1,0 +1,1014 @@
+/* General reset and body styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #FFD700, #FF1493);
+  /* Golden and pink gradient */
+  color: white;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* 3D ring section with more content */
+.ring-section {
+  height: 600px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.ring-section > div {
+  width: 50%;
+}
+
+.ring-content{
+  padding-left: 14%;
+}
+
+
+.ring-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #FFD700;
+  /* Gold color for the title */
+}
+
+.ring-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.shop-now-btn {
+  padding: 10px 20px;
+  background-color: #FF1493;
+  /* Pink button */
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #FFD700;
+  /* Gold hover effect */
+}
+
+/* Ring container for the 3D effect */
+.ring-container {
+  width: 80%;
+  height: 350px;
+  background-color: transparent;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Product section */
+.product-section {
+  padding: 50px 20px;
+  background-color: #333;
+  text-align: center;
+}
+
+.product-section h2 {
+  font-size: 2em;
+  color: #F2E8A2;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 120px;
+  /* Adjust width to accommodate smaller images */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #F2E8A2;
+  transition: transform 0.3s ease, background-color 1s ease, color 0.1s;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  background-color: #ffd900a8;
+  color: #444;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 100px;
+  /* Set the width of images to 100px */
+  height: 100px;
+  /* Adjust height for a square image */
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.product-info {
+  padding: 15px;
+
+}
+
+.product-info h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 3D ring section with fancy light rays */
+.ring-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+#ring{
+  z-index: 1;
+}
+
+
+
+/* Ring Section with glowing light effect */
+.ring-section {
+  height: 600px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Align vertically in the center */
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8));
+}
+
+/* Glowing light effect with unfocused appearance */
+.ring-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%; /* Larger size to spread out the light */
+  height: 1000px; /* Larger size to spread out the light */
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 200px 40px rgba(255, 165, 0, 0.8), 0 0 250px 60px rgba(255, 215, 0, 0.5);
+  animation: glowing 4s infinite ease-in-out;
+  opacity: 0.6;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Container for the ring and content */
+.ring-section > div {
+  width: 50%;
+  position: relative;
+  z-index: 1; /* Keep content above the glowing effect */
+}
+
+/* Content styling */
+.ring-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #FFD700; /* Yellowish gold color */
+}
+
+.ring-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.shop-now-btn {
+  padding: 10px 20px;
+  background-color: #FF8C00; /* Orange button color */
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #FFD700; /* Yellowish gold on hover */
+}
+
+/* Glowing animation for light effect */
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 150px 40px rgba(255, 165, 0, 0.6), 0 0 200px 50px rgba(255, 215, 0, 0.4);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    box-shadow: 0 0 250px 80px #FFD700, 0 0 300px 100px #FFD700;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    box-shadow: 0 0 150px 40px rgba(255, 165, 0, 0.6), 0 0 200px 50px rgba(255, 215, 0, 0.4);
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #F2E8A2;
+  gap: 10px;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #111, #222);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#loader::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-top: 5px solid #bba14f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Loader Spin Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  cursor: pointer;
+  margin: 5px;
+}
+
+#stopMusic {
+  margin-right: 50px;
+  background-color: #111;
+  color: #f5c518;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #f5c518;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 10px rgba(245, 197, 24, 0.5);
+}
+
+#stopMusic:hover {
+  background-color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 15px rgba(245, 197, 24, 0.7);
+}
+
+#stopMusic:active {
+  background-color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#jewelBtn{
+  background-color: #111;
+  color: #FFD700;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #FFD700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+
+}
+
+#jewelBtn:hover{
+  background-color: #333;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.8s ease-in-out;
+  border-radius: 40px;
+}
+
+/* Fade-in animation for modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Close modal with fade-out after delay */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  background: linear-gradient(135deg, #0d0c0c, #1f1d1d);
+  padding: 60px 80px;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.8);
+  border: 5px solid #f5c518;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add a delay to the fade-out effect */
+.modal.fade-out {
+  animation: fadeOut 0.5s ease-in-out 1 forwards; /* Fade out over 0.5 seconds */
+  animation-delay: 2s; /* Delay before starting the fade-out */
+}
+
+/* Close Button */
+.close {
+  color: #f5c518;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.close:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+
+/* Custom Scrollbar */
+#orders-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+#orders-container::-webkit-scrollbar-thumb {
+  background-color: #d4a019; /* Luxury orange color */
+  border-radius: 10px;
+ 
+}
+
+#orders-container::-webkit-scrollbar-track {
+  background-color: #f4f4f4; /* Light background for the track */
+  border-radius: 10px;
+}
+
+
+
+
+#orders-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 100%;
+  background: linear-gradient(to bottom, #1e1e1e, #292929); /* Rich dark gradient background */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deep shadow for luxurious feel */
+  border: 2px solid #b89018; /* Gold border for an expensive touch */
+}
+
+.order-card {
+  background: linear-gradient(to right, #2c2c2c, #1f1f1f); /* Subtle gradient for a modern dark tone */
+  border: 1px solid #4d4d4d; /* Sleek gray border */
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+  margin-bottom: 25px;
+  width: 85%;
+  max-width: 900px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  color: #fff; /* White text for dark background */
+}
+
+.order-card:hover {
+  transform: scale(1.03); /* Subtle upscale on hover */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+  border: 2px solid #b89018; /* Highlight gold border on hover */
+}
+
+.order-header {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f7c44c; /* Luxurious gold text */
+  margin-bottom: 15px;
+  letter-spacing: 1.2px;
+  font-family: 'Playfair Display', serif;
+}
+
+.order-details {
+  font-size: 16px;
+  color: #d9d9d9; /* Soft white-gray for elegance */
+  margin-bottom: 25px;
+  font-family: 'Lora', serif;
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
+  gap: 25px;
+  justify-content: center;
+}
+
+.item-card {
+  background: linear-gradient(to bottom, #1e1e1e, #292929); /* Dark premium gradient */
+  border: 2px solid #b89018; /* Gold border */
+  border-radius: 20px; /* Smooth, elegant rounded edges */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3); /* Luxurious shadow */
+  overflow: hidden;
+  text-align: center;
+  padding: 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 320px;
+  margin: auto;
+  position: relative; /* For positioning overlays */
+}
+
+.item-card:hover {
+  transform: translateY(-12px); /* Lift effect on hover */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+  border-color: #f7c44c; /* Highlighted gold border */
+}
+
+.item-card img {
+  width: 100%;
+  height: 260px; /* Uniform image size */
+  object-fit: cover;
+  border-radius: 15px; /* Softly rounded edges for images */
+  margin-bottom: 20px;
+  border: 3px solid #f7c44c; /* Luxurious gold frame */
+}
+
+.item-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff; /* Bright white for contrast */
+  margin: 15px 0 10px;
+  letter-spacing: 1.5px;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase; /* Adds a premium feel */
+}
+
+.item-card p {
+  font-size: 15px;
+  color: #d9d9d9; /* Subtle gray-white for text */
+  margin: 10px 0;
+  line-height: 1.6;
+  font-family: 'Lora', serif;
+}
+
+.item-card .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f7c44c; /* Luxurious gold */
+  margin-top: 15px;
+  letter-spacing: 1.8px;
+  font-family: 'Lora', serif;
+}
+
+.item-card .quantity,
+.item-card .total-price {
+  font-size: 16px;
+  color: #d9d9d9; /* Elegant gray-white */
+  margin-top: 8px;
+  font-family: 'Lora', serif;
+}
+
+.item-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.6));
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.item-card:hover::before {
+  opacity: 1; /* Glowing overlay on hover */
+}
+
+/* Scrollbar styling for a luxurious look */
+#orders-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+#orders-container::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark track */
+  border-radius: 10px;
+}
+
+#orders-container::-webkit-scrollbar-thumb {
+  background: #b89018; /* Rich gold scrollbar thumb */
+  border-radius: 10px;
+}
+
+#orders-container::-webkit-scrollbar-thumb:hover {
+  background: #f7c44c; /* Brighter gold on hover */
+}
+
+
+
+
+
+#orders-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto; /* Adds a scrollbar if needed */
+  width: 100%;
+  background-color: #f8f8f8; /* Light background for elegance */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Luxurious shadow */
+}
+
+/* Style for individual order cards */
+.order-card-modal {
+  background: linear-gradient(to bottom, #ffffff, #fafafa); /* Subtle gradient for luxury */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Refined shadow */
+  margin: 15px 0;
+  width: 90%; /* Responsive width */
+  max-width: 900px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Order header styling */
+.order-header-modal {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Order details styling */
+.order-details-modal {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Container for items inside an order */
+.items-container-modal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between items */
+  justify-content: space-between;
+}
+
+/* Individual item cards */
+.item-card-modal {
+  background: #ffffff;
+  border: none; /* No border for images */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Elegant shadow */
+  padding: 15px;
+  text-align: center;
+  width: calc(33.333% - 20px); /* Responsive grid (3 items per row) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-card-modal img {
+  width: 80%; /* Responsive image width */
+  height: 180px; /* Uniform image height */
+  object-fit: cover; /* Prevent image distortion */
+  border-radius: 10px; /* Smooth edges for images */
+  margin-bottom: 10px;
+}
+
+.item-card-modal h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item-card-modal p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.item-card-modal .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #d4a019; /* Luxury gold color for pricing */
+}
+
+/* Remove hover effect on item cards */
+.item-card-modal:hover {
+  transform: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Keep shadow consistent */
+}
+
+
+
+
+
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f9f9f9; /* Lighter background color */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cart-item-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.cart-item-details h3, .cart-item-details p {
+  color: #333; /* Ensuring the text is dark enough to be legible */
+}
+
+.remove-btn {
+  background-color: #f44336; /* Slightly lighter red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.1);
+}
+
+#total-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#total-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: white; /* White color for total price */
+  background-color: #333; /* Dark background for contrast */
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#buy-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#buy-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+/* Base Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup-content {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  animation: popupFadeIn 0.5s ease;
+}
+
+.popup-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-message {
+  color:grey;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.popup-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.popup-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  margin: 5px;
+}
+
+/* Success Popup Styles */
+.popup.success .popup-content {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+}
+
+.popup.success .popup-icon {
+  color: #4caf50;
+}
+
+.popup.success .popup-title {
+  color: #444;
+}
+
+.popup.success .popup-button {
+  background: #4caf50;
+  color: #fff;
+}
+
+.popup.success .popup-button:hover {
+  background: #43a047;
+}
+
+/* Error Popup Styles */
+.popup.error .popup-content {
+  background: linear-gradient(135deg, #ffefef, #fff6f6);
+}
+
+.popup.error .popup-icon {
+  color: #e53935;
+}
+
+.popup.error .popup-title {
+  color: #c62828;
+}
+
+.popup.error .popup-button {
+  background: #e53935;
+  color: #fff;
+}
+
+.popup.error .popup-button:hover {
+  background: #d32f2f;
+}
+
+.popup.error .popup-button.close {
+  background: #757575;
+}
+
+.popup.error .popup-button.close:hover {
+  background: #616161;
+}
+
+/* Animation */
+@keyframes popupFadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+#newJewelDiv{
+  display: none;
+}
+
+
+
+
+#newJewelDiv {
+  background: linear-gradient(135deg, #faf3e6, #ebe4d5);
+  border: 3px solid #c8b798;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  max-width: 500px;
+  margin: auto;
+}
+
+#newJewelDiv h2 {
+  text-align: center;
+  color: #a4886c;
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#newJewelDiv label {
+  font-size: 17px;
+  font-weight: bold;
+  color: #705b48;
+  margin-bottom: 8px;
+  display: block;
+}
+
+#newJewelDiv input, #newJewelDiv textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1c0a8;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #f9f5ee;
+  color: #4a4a4a;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#newJewelDiv input:focus, #newJewelDiv textarea:focus {
+  outline: none;
+  border-color: #b89f75;
+  box-shadow: 0 0 6px rgba(184, 159, 117, 0.7);
+}
+
+#newJewelDiv textarea {
+  resize: none;
+  height: 100px;
+}
+
+#chooseImg {
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #faf3e6;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d1c0a8;
+  display: block;
+  width: 100%;
+}
+
+#chooseImg:hover {
+  border-color: #b89f75;
+  box-shadow: 0 0 6px rgba(184, 159, 117, 0.7);
+}
+
+#submitBtn {
+  background: linear-gradient(135deg, #b89f75, #9c7e57);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 12px 20px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+#submitBtn:hover {
+  background: linear-gradient(135deg, #9c7e57, #7c6443);
+}

@@ -1,0 +1,22 @@
+# --- Sensitive config files ---
+config.js
+.env
+
+# --- Node / JS / Frontend tooling ---
+node_modules/
+dist/
+build/
+.cache/
+
+# --- OS / Editor files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+*.bak
+*.old
