@@ -3,7 +3,7 @@
 A cloud-native, serverless web application developed for a luxury jewelry brand using AWS services.  
 The platform enables browsing products, managing user authentication, processing orders, and delivering real-time notifications — all without managing any servers.
 
-🔗 **Live Demo:** [Click here to view the project](https://diamondluxe.s3.us-east-1.amazonaws.com/index.html)
+🔗 **Live Demo:** _Currently unavailable_
 
 <img src="screenshots/homepage.png" width="800" alt="Homepage view">
 
